@@ -3,15 +3,54 @@
         <title>CatPhotoApp</title>
     </head>
     <body>
-        <h2>CatPhotoApp</h2>
-        <main>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <style>          
+            [type = "checkbox"] {
+                margin: 10px, 0px, 15px, 0px;
+            }
+
+            #cat-photo-form {
+                background-color:green;
+            }
+
+            .silver-background {
+                background-color: silver;
+            }
+
+            .thick-green-border {
+                border-color: green;
+                border-width: 10px;
+                border-style:solid;
+                border-radius: 50%;
+            }
+
+            .smaller-image {
+                width: 100px;
+            }
+            .red-text {
+                color: red;
+                }
+
+            p {
+                font-size:16px;
+                font-family: monospace;
+            }
+
+            h2 {
+                font-family: Lobster,monospace;
+            }
+
+        </style>
+
+        <h2 class="red-text">CatPhotoApp</h2>
+        <main >
             <h3>Cat Photos</h3>
             <!--- TODO: Add link to cat photos-->
-            <p>Click here to <a href= "#" target = "_blank">search for cat photos</a></p>
-            <a href= "https://google.com"><img src= "kitten.png" 
-                alt= "A cute little kitty smilingヾ(•ω•`)o"></a>
+            <p class ="red-text">Click here to <a href= "#" target = "_blank">search for cat photos</a></p>
+            <a  href= "https://google.com"><img class ="smaller-image thick-green-border" src= "kitten.png" 
+                alt= "A cute little kitty smilingヾ(•ω•`)o">
+            </a>
             <h3>Cat Lists</h3>
-            <div class="lists">
             <p>Things cats <em>love</em>:</p>
             <ul>
                 <li>cat nip</li>
@@ -27,19 +66,19 @@
             </ol>
         </div>
             <img src= "https://cdn.freecodecamp.org/youtube/html-course/cats.jpg" alt= "Cats">
-            <form action= "/submit-cat-photo">
+            <form id = "cat-photo-form" action= "/submit-cat-photo">
                 <label for="indoor">
                     <input id="indoor" type = "radio" name="indoor-outdoor" checked> Indoor
-                </label><br>
+                </label>
                 <label>
                     <input id="indoor" type = "radio" name="indoor-outdoor"> Outdoor
                 </label><br>
                 <label for="loving">
                     <input id="loving" type="checkbox" name="personality" checked> Loving
-                </label><br>
+                </label>
                 <label for="lazy">
                     <input id="lazy" type="checkbox" name="personality"> Lazy
-                </label><br>
+                </label>
                 <label for="energetic">
                     <input id="energetic" type="checkbox" name="personality"> Energetic
                 </label><br>
